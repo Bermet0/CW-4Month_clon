@@ -1,0 +1,20 @@
+.color-title{
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.style-description{
+    color: green;
+    font-weight: bolder;
+}
+.center-block{
+    text-align: center;
+}
+
+.center-text{
+    text-align: center;
+}
+.image-style{
+    width: 300px;
+    height: 250px;
+}

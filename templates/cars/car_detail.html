@@ -1,0 +1,15 @@
+{% include 'cars/header.html' %}
+<div class="center-text">
+<h1 class="color-title">Подробнее об {{car_id.title}}</h1>
+<p class="style-description">{{car_id.description}}</p>
+
+<div class="center-block"><img src="{{car_id.photo.url}}" alt="" class="image-style"></div>
+
+    <p class="price-style">{{car_id.price}}</p>
+    <a href="{{car_id.car_url}}">Перейти по ссылке</a>
+    <p class="style-customer">{{car_id.number_customer}}</p>
+    <p class="style-oil">{{car_id.oil}}</p>
+    <p class="style-type-car">{{car_id.type_car}}</p>
+    <p class="style-created-at">{{car_id.created_at}}</p>
+</div>
+{% include 'cars/footer.html' %}

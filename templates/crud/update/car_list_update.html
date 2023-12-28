@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Выберите объект для изменения</h1>
+<ul>
+    {% for i in car_update %}
+    <li>
+        <h2>{{i.title}}</h2>
+        <button><a href="/car_update/{{i.id}}/update/">Изменить</a></button>
+    </li>
+    {% endfor %}
+</ul>
+</body>
+</html>

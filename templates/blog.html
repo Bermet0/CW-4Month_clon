@@ -1,0 +1,13 @@
+{% include 'cars/header.html' %}
+<h1>Все новости</h1>
+<ul>
+    {% for i in post %}
+    <li>
+        <h2>{{i.post_name}}</h2>
+        <img src="{{i.post_image.url}}" alt="">
+        <p>{{i.post_description}}</p>
+        <p>{{i.post_created_at}}</p>
+    </li>
+    {% endfor %}
+</ul>
+{% include 'cars/footer.html' %}

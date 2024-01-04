@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'blog',
     'car_market',
     'parser_app',
+    'custom_users',
 ]
 
 MIDDLEWARE = [

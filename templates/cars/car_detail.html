@@ -11,5 +11,22 @@
     <p class="style-oil">{{car_id.oil}}</p>
     <p class="style-type-car">{{car_id.type_car}}</p>
     <p class="style-created-at">{{car_id.created_at}}</p>
+
+
+
+
 </div>
+<center>
+    <table border="5">
+        <tr>
+            <th>Отзыв</th> <th>Дата создания</th>
+        </tr>
+
+        {% for i in car_id.car_review.all %}
+        <tr>
+            <td>{{i.text}}</td> <td>{{i.created_at}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    </center>
 {% include 'cars/footer.html' %}
